@@ -1,11 +1,9 @@
 ---
 title: Pasta alla Norma
 tags: 
-  - third
+  - firstcourse
+image: /assets/images/recipe-3.webp
 ---
-
-Pasta alla Norma
-----------------
 
 **Difficulty:** low
 
@@ -17,7 +15,7 @@ Pasta alla Norma
 
 **Cost:** medium
 
-![pastaallanorma](/assets/images/recipe-3.webp)
+![pasta alla norma](/assets/images/recipe-3.webp)
 
 ### Ingredients
 

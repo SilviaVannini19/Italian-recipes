@@ -1,11 +1,9 @@
 ---
 title: Pasta ca Muddica
 tags: 
-  - second
+  - firstcourse
+image: /assets/images/recipe-2.jpg
 ---
-
-Pasta ca muddica atturrata
---------------------------
 
 **Difficulty:** low
 
@@ -17,7 +15,7 @@ Pasta ca muddica atturrata
 
 **Cost:** low
 
-![pastacamuddica](/assets/images/recipe-2.jpg)
+![pasta ca muddica](/assets/images/recipe-2.jpg)
 
 ### Ingredients
 

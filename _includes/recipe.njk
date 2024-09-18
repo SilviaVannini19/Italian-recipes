@@ -1,10 +1,26 @@
 ---
 layout: base.njk
 ---
+difficoltà: {{ difficulty }}
 {{ content | safe }}
-Tags: 
+
 {{ recipe }}
 
+<ul>
+  <h2>See also:</h2>
+  {# Loop through the posts collection and print the titles with links, excluding the current page #}
+  {% for recipe in collections.recipe %}
+    {% if recipe.url != page.url %}
+      <li>
+        <a href="{{ recipe.url }}">
+          <h3>{{ recipe.data.title }}</h3>
+        </a>
+        {# <p>{{ recipe.data.tags }}</p> #}
+        <img src="{{ recipe.data.image }}" alt="{{ recipe.data.title }}">
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 
     

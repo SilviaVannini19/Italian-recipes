@@ -1,9 +1,8 @@
 ---
-title: Anellini al forno
+title: Arancine!
 tags: 
-  - firstcourse
-image: /assets/images/recipe-1.jpeg
-difficulty: medium
+  - secondcourse
+image: /assets/images/recipe-6.jpg
 ---
 
 **Difficulty:** medium
@@ -16,7 +15,7 @@ difficulty: medium
 
 **Cost:** medium
 
-![anellini al forno](/assets/images/recipe-1.jpeg)
+![arancine palermitane](/assets/images/recipe-6.jpg)
 
 ### Ingredients
 

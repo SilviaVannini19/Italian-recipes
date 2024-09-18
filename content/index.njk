@@ -3,8 +3,21 @@ title: Italian Recipes
 layout: base.njk
 ---
 
-<h2>Or better, <em>Sicilian<em></h2>
+<img src="../assets/images/homephoto.webp" alt="sicilian food">
+<h2>Or better, <em>Sicilian</em></h2>
 <p>The culinary treasures of Sicilian cuisine are truly endless. 
 I could spend hours talking about the iconic and most famous dishes of the beautiful Island
-such as sfincione, panerlle and fried everything. But today, I dusted off grandma's old cookbook and, 
+such as sfincione, panelle and fried everything. But today, I dusted off grandma's old cookbook and, 
 thanks to her formidable advice, I prepared three diffrent pasta recipies.</p>
+
+<ul>
+  {# Loop through the posts collection and print the titles with links #}
+  {% for recipe in collections.recipe %}
+    <li class="{% if loop.index == 2 %} {% endif %} stack">
+      <a href="{{ recipe.url }}">
+        <h2>{{ recipe.data.title }}</h2>
+      </a>
+      <p>{{ recipe.data.tags }}</p>
+    </li>
+  {% endfor %}
+</ul>

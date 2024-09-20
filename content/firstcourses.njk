@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+
+<h2>
+  Sicilian First Courses</h2>
+
+<p>Sicilian first courses, or "primi piatti," are a celebration of the island’s rich culinary traditions, drawing from
+  its diverse cultural influences. These dishes often feature homemade pastas like busiate or cavatelli, paired with
+  vibrant, sun-soaked ingredients. Sicily's bounty of fresh seafood, ripe tomatoes, and fragrant herbs gives rise to
+  classics like pasta con le sarde (with sardines) and spaghetti alla Norma, a flavorful combination of eggplant, ricotta,
+  and basil. Couscous alla Trapanese, a nod to North African influences, also showcases the region’s versatility. Each
+  dish offers a taste of Sicily’s history, soul, and love for simple yet bold flavors.</p>
+<ul class="cardsgrid">
+  {# Loop through the posts collection and print the titles with links #}
+  {% for recipe in collections.firstcourse %}
+    <li>
+      <a href="{{ recipe.url }}">
+        <h3>{{ recipe.data.title }}</h3>
+      </a>
+      <ul class="tags">
+        {# Loop through the tags array and display each tag #}
+        {% for tag in recipe.data.tags %}
+          <li>
+            <a href="/firstcourses/">
+              {{ tag }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <img src="{{ recipe.data.image }}" alt=" {{ title }}"></li>
+    {% endfor %}
+  </ul>

@@ -3,17 +3,12 @@ title: Pasta ca Muddica
 tags: 
   - firstcourse
 image: /assets/images/recipe-2.jpg
+difficulty: low
+time: 10 minutes
+cookingtime: 15 minutes
+dosage: for 5 people
+cost: low
 ---
-
-**Difficulty:** low
-
-**Time:** 10 minutes
-
-**Cooking Time:** 15 minutes
-
-**Dosage** for 5 people
-
-**Cost:** low
 
 ![pasta ca muddica](/assets/images/recipe-2.jpg)
 

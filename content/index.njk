@@ -3,38 +3,53 @@ title: Italian Recipes
 layout: base.njk
 ---
 
-<img src="../assets/images/homephoto.webp" alt="sicilian food">
+<img src="../assets/images/homephoto.webp" alt="sicilian food" class="images">
 <h2>Or better, <em>Sicilian</em></h2>
 <p>The culinary treasures of Sicilian cuisine are truly endless. 
 I could spend hours talking about the iconic and most famous dishes of the beautiful Island
 such as sfincione, panelle and fried everything. But today, I dusted off grandma's old cookbook and, 
 thanks to her formidable advice, I prepared three diffrent pasta recipies.</p>
 
-<ul>
   <h2> Sicilian First Courses</h2>
+  <ul class="cardsgrid">
   {# Loop through the posts collection and print the titles with links #}
-  {% for recipe in collections.firstcourse %}
-    <li>
+    {% for recipe in collections.firstcourse %}
+    <li> 
       <a href="{{ recipe.url }}">
         <h3>{{ recipe.data.title }}</h3>
       </a>
-      <p>{{ recipe.data.tags }}</p>
-      <img src="{{ recipe.data.image }}" alt=" {{ title }}">
+
+        <ul class="tags">
+        {# Loop through the tags array and display each tag #}
+        {% for tag in recipe.data.tags %}
+          <li> <a href="/firstcourses/"> {{ tag }} </a></li>
+        {% endfor %}
+        </ul>
+
+      <img src="{{ recipe.data.image }}" alt=" {{ title }}">  
     </li>
   {% endfor %}
-</ul>
-
-<ul>
+  </ul>
+  
   <h2> Sicilian Second Courses</h2>
+    <ul class="cardsgrid">
   {# Loop through the posts collection and print the titles with links #}
   {% for recipe in collections.secondcourse %}
-    <li>
+      <li> 
       <a href="{{ recipe.url }}">
         <h3>{{ recipe.data.title }}</h3>
       </a>
-      <p>{{ recipe.data.tags }}</p>
+
+        <ul class="tags">
+        {# Loop through the tags array and display each tag #}
+        {% for tag in recipe.data.tags %}
+           <li> <a href="/secondcourses/"> {{ tag }} </a></li>
+        {% endfor %}
+        </ul>
+
       <img src="{{ recipe.data.image }}" alt=" {{ title }}">
-    </li>
+      </li> 
   {% endfor %}
-</ul>
+    </ul>
+
 

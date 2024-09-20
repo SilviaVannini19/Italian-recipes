@@ -4,17 +4,11 @@ tags:
   - firstcourse
 image: /assets/images/recipe-1.jpeg
 difficulty: medium
+time: 30 minutes
+cookingtime: 1 hour 45 minutes
+dosage: for 6 people
+cost: medium
 ---
-
-**Difficulty:** medium
-
-**Time:** 30 minutes
-
-**Cooking Time:** 1 hour 45 minutes
-
-**Dosage** for 6 people
-
-**Cost:** medium
 
 ![anellini al forno](/assets/images/recipe-1.jpeg)
 

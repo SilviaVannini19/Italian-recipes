@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; 
+  font-family: Gowun Batang;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+h1 { 
+  color: rgb(230, 50, 230);
+
+  font-size: 3.5em;
+  margin: 0.25em;
+}
+
+
+h2 { 
+  color: rgb(230, 50, 230);
+  font-size: 2em;
+  margin: 0.25em;
+}
+
+h3 { 
+  text-align: center;
+
+  color:  rgb(89, 230, 50);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+
+  padding: 1.25rem;
+
+  box-shadow: 0 0 20px rgba(46, 45, 45, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  height: 8em;
+}
+
+.center {
+  padding: 0 1em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 0.25em;
+}
+
+.images {
+  margin: 0 auto;
+
+  max-height: 25em;
+  max-width: 50em;
+}
+
+.cardsgrid {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0.25em;
+
+  padding: 0;
+}
+
+.eat {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(89, 230, 50);
+}
+
+.info {
+  margin: 0.50em;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0.50em;
+
+  padding: 0;
+}
+
+.tags a {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+}

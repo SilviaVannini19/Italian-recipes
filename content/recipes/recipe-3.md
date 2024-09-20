@@ -3,17 +3,12 @@ title: Pasta alla Norma
 tags: 
   - firstcourse
 image: /assets/images/recipe-3.webp
+difficulty: low
+time: 25 minutes
+cookingtime: 1 hour
+dosage: for 6 people
+cost: medium
 ---
-
-**Difficulty:** low
-
-**Time:** 25 minutes
-
-**Cooking Time:** 1 hour
-
-**Dosage** for 6 people
-
-**Cost:** medium
 
 ![pasta alla norma](/assets/images/recipe-3.webp)
 

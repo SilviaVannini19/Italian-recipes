@@ -3,17 +3,12 @@ title: Parmigiana di melanzane
 tags: 
   - secondcourse
 image: /assets/images/recipe-4.jpg
+difficulty: medium
+time: 30 minutes
+cookingtime: 1 hour 45 minutes
+dosage: for 6 people
+cost: low
 ---
-
-**Difficulty:** medium
-
-**Time:** 30 minutes
-
-**Cooking Time:** 1 hour 45 minutes
-
-**Dosage** for 6 people
-
-**Cost:** medium
 
 ![parmigiana di melanzane](/assets/images/recipe-4.jpg)
 

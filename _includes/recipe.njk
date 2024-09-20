@@ -1,26 +1,48 @@
 ---
 layout: base.njk
 ---
-difficoltà: {{ difficulty }}
+<ul class="tags">
+  {# Loop through the tags array and display each tag #}
+  {% for tag in tags %}
+   <li> <a href="/"> {{ tag }} </a></li>
+  {% endfor %}
+</ul>
+
+<div class="info">
+<strong>Difficulty:</strong>  {{ difficulty }}
+<strong>Time:</strong>  {{ time }}
+<strong>Cooking Time:</strong>  {{ cookingtime }}
+<strong>Dosage:</strong>  {{ dosage }}
+<strong>Cost:</strong>  {{ cost }}
+</div>
+
+
 {{ content | safe }}
 
 {{ recipe }}
 
-<ul>
+
   <h2>See also:</h2>
+  <ul class="cardsgrid">
   {# Loop through the posts collection and print the titles with links, excluding the current page #}
   {% for recipe in collections.recipe %}
-    {% if recipe.url != page.url %}
-      <li>
+    {% if recipe.url != page.url and (tags | dump) == (recipe.data.tags | dump)%}
+       <li>
         <a href="{{ recipe.url }}">
           <h3>{{ recipe.data.title }}</h3>
         </a>
-        {# <p>{{ recipe.data.tags }}</p> #}
+
+        <ul class="tags">
+          {# Loop through the tags array and display each tag #}
+          {% for tag in tags %}
+          <li> <a href="/"> {{ tag }} </a></li>
+          {% endfor %}
+        </ul>
+
         <img src="{{ recipe.data.image }}" alt="{{ recipe.data.title }}">
-      </li>
+        </li>   
     {% endif %}
   {% endfor %}
 </ul>
-
 
     

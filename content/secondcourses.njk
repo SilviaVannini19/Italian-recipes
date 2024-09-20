@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+
+<h2>Sicilian Second Courses</h2>
+
+<p>Sicilian second courses, or "secondi piatti," highlight the island’s rich connection to the land and sea. These main
+  dishes often feature fresh seafood like swordfish, tuna, and sardines, prepared in a variety of ways, from grilled to
+  baked in rich sauces. Dishes like involtini di pesce spada (stuffed swordfish rolls) or sarde a beccafico (sardines
+  filled with breadcrumbs, pine nuts, and raisins) reflect Sicily’s coastal bounty. Meat lovers are treated to specialties
+  like agnello al forno (roast lamb) or the hearty bracioline (meat rolls). Whether seafood or meat, these dishes embody
+  the rustic charm and bold flavors of traditional Sicilian cuisine, always rooted in fresh, local ingredients.</p>
+<ul class="cardsgrid">
+  {# Loop through the posts collection and print the titles with links #}
+  {% for recipe in collections.secondcourse %}
+    <li>
+      <a href="{{ recipe.url }}">
+        <h3>{{ recipe.data.title }}</h3>
+      </a>
+      <ul class="tags">
+        {# Loop through the tags array and display each tag #}
+        {% for tag in recipe.data.tags %}
+          <li>
+            <a href="/secondcourse/">
+              {{ tag }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <img src="{{ recipe.data.image }}" alt=" {{ title }}"></li>
+    {% endfor %}
+  </ul>
